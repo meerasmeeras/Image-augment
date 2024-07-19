@@ -1,0 +1,16 @@
+.card {
+    background-color: transparent;
+}
+
+.image-scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent images from wrapping */
+    position: relative; /* Relative positioning to contain absolute positioned images */
+    height: 200px; /* Set the height of the container */
+  }
+  .image-scroll-container img {
+    height: 100%; /* Ensure images fill container height */
+  }
+  .carousel-item {
+    transition-duration: 0.5s; /* Adjust as needed */
+  }

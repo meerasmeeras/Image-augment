@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+            Image Augmentation-upload
+{% endblock%}
+
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center pt-5 pb-5">
+  
+  <form method="POST" enctype="multipart/form-data" style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      {% csrf_token %}
+      <div class="mb-3">
+          <h4>Upload your images</h4>
+          <label for="formFileMultiple" class="form-label">Multiple files input supported</label>
+          <input class="form-control" type="file" id="formFileMultiple" name="images" multiple>
+      </div>
+
+      <button type="submit" class="btn btn-secondary">Submit</button>
+  </form>
+  
+</div>
+
+
+
+
+
+{% endblock%}
